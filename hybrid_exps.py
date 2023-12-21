@@ -73,10 +73,10 @@ def rrf(fsem, flex, ita):
 def main():
     parser = argparse.ArgumentParser(description='Example script with argparse')
     # Define command-line arguments
-    parser.add_argument('--ita', type=int, help='Description for ita argument')
-    parser.add_argument('--alpha', type=float, help='Description for alpha argument')
-    parser.add_argument('--dense', type=str, help='Description for dense argument')
-    parser.add_argument('--topk', type=int, help='Description for topk argument')
+    parser.add_argument('--ita', type=int, help='ita in RRF')
+    parser.add_argument('--alpha', type=float, help='alpha in tm2c2')
+    parser.add_argument('--dense', type=str, help='dense model name')
+    parser.add_argument('--topk', type=int, help='topk')
 
     args = parser.parse_args()
     ita = args.ita
